@@ -37,4 +37,7 @@ public class Points  {
         Point t = new Point(n, m, l);
         return new Point(n, m, l);
     }
+    static double Length (Point point){
+        return point.Length();
+    }
 }
