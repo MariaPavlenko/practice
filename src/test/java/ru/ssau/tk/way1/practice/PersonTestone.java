@@ -16,7 +16,7 @@ public class PersonTestone {
     @Test
     public void testGetLastName() {
         Person bob= new Person();
-        bob.setLastName(null);
+        bob.setLastName("Bob");
         assertEquals(bob.getLastName(),null);
     }
 
