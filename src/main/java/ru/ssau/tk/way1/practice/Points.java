@@ -32,9 +32,10 @@ public class Points  {
         double l = u.z * v;
         return new Point(n, m, l);
     }
-    static double Length (Point point){
+    static double length (Point point){
         return point.Length();
     }
+
     static Point opposite(Point point){
         double n = -1*point.x;
         double m = -1*point.y;
