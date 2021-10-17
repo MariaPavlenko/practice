@@ -6,12 +6,13 @@ public class Point {
     final double z;
 
 
-    protected Point (double x, double y, double z) {
+    protected Point(double x, double y, double z) {
         this.x = x;
         this.y = y;
         this.z = z;
     }
-    public double Length () {
-        return Math.sqrt(x * x + y + y + z * z);
+
+    public double Length() {
+        return Math.sqrt(x * x + y * y + z * z);
     }
 }

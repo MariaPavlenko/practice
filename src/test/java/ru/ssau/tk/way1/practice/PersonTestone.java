@@ -10,19 +10,19 @@ public class PersonTestone {
     public void testGetFirstName() {
         Person bob = new Person();
         bob.setFirstName("Bob");
-        assertEquals(bob.getFirstName(),"Bob");
+        assertEquals(bob.getFirstName(), "Bob");
     }
 
     @Test
     public void testGetLastName() {
-        Person bob= new Person();
+        Person bob = new Person();
         bob.setLastName("Bob");
-        assertEquals(bob.getLastName(),"Bob");
+        assertEquals(bob.getLastName(), "Bob");
     }
 
     @Test
     public void testGetPassportId() {
-        Person bob= new Person();
+        Person bob = new Person();
         bob.setPassportId(676);
         assertEquals(bob.getPassportId(), 676);
     }

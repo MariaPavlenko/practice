@@ -7,13 +7,14 @@ import static java.lang.Double.*;
 import static java.lang.Math.*;
 
 public class PointsTest {
-    public final double accuracy= 0.0005;
-    private boolean equalsApproximately(double firstValue, double secondValue){
-        return (isNaN(firstValue)&&isNaN(secondValue))||isInfinite(firstValue)&&isInfinite(secondValue) || (abs(firstValue)- abs(secondValue) )<accuracy;
+    public final double accuracy = 0.0005;
+
+    private boolean equalsApproximately(double firstValue, double secondValue) {
+        return (isNaN(firstValue) && isNaN(secondValue)) || isInfinite(firstValue) && isInfinite(secondValue) || (abs(firstValue) - abs(secondValue)) < accuracy;
     }
 
     private boolean equalsApproximately(Point firstPoint, Point secondPoint) {
-      return equalsApproximately(firstPoint.x, secondPoint.x) && equalsApproximately(firstPoint.y, secondPoint.y) && equalsApproximately(firstPoint.z, secondPoint.z);
+        return equalsApproximately(firstPoint.x, secondPoint.x) && equalsApproximately(firstPoint.y, secondPoint.y) && equalsApproximately(firstPoint.z, secondPoint.z);
     }
 
     Point firstPoint = new Point(3., 4., 5.);
@@ -44,11 +45,11 @@ public class PointsTest {
         Assert.assertTrue(equalsApproximately(Points.enlarge(firstPoint, 5.), new Point(15., 20., 25.)));
     }
 
- //   @Test
-   // public void testLength() {
-     //   System.out.println(Points.length(firstPoint));
-       // Assert.assertEquals(Points.length(firstPoint), Math.sqrt(50.), accuracy);
-    //}
+       @Test
+     public void testLength() {
+       System.out.println(Points.length(firstPoint));
+     Assert.assertEquals(Points.length(firstPoint), Math.sqrt(50.), accuracy);
+    }
 
     @Test
     public void testOpposite() {
