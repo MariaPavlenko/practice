@@ -47,7 +47,6 @@ public class PointsTest {
 
        @Test
      public void testLength() {
-       System.out.println(Points.length(firstPoint));
      Assert.assertEquals(Points.length(firstPoint), Math.sqrt(50.), accuracy);
     }
 
