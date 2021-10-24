@@ -18,4 +18,9 @@ public class ArraysTest {
     public void testArrOneTwo() {
         Assert.assertEquals(arr1.arrOneTwo(5), new int[]{2, 1, 1, 1, 2});
     }
+
+    @Test
+    public void testArrEven() {
+        Assert.assertEquals(arr1.arrEven(5), new int[]{10, 8, 6, 4, 2});
+    }
 }
