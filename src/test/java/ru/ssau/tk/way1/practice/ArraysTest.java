@@ -13,4 +13,9 @@ public class ArraysTest {
     public void testArr() {
         Assert.assertEquals(first.length, 5);
     }
+
+    @Test
+    public void testArrOneTwo() {
+        Assert.assertEquals(arr1.arrOneTwo(5), new int[]{2, 1, 1, 1, 2});
+    }
 }

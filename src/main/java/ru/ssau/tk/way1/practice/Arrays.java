@@ -1,8 +1,19 @@
 package ru.ssau.tk.way1.practice;
 
 public class Arrays {
-    public int[] arr (int n) {
-     int[] arr = new int[n];
-     return arr;
+    public int[] arr(int n) {
+        return new int[n];
+    }
+
+    public int[] arrOneTwo(int n) {
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            if (i == 0 || i == n-1) {
+                arr[i] = 2;
+            } else {
+                arr[i] = 1;
+            }
         }
+        return arr;
+    }
 }
