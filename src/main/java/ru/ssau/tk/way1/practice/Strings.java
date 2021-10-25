@@ -6,4 +6,12 @@ public class Strings {
             System.out.println(s.charAt(i));
         }
     }
+
+    public void stringByteArr(String s) {
+        byte[] b = s.getBytes();
+        for (byte i : b
+        ) {
+            System.out.println(i);
+        }
+    }
 }
