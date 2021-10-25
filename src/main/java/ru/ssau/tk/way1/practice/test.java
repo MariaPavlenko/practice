@@ -26,5 +26,6 @@ public class test {
         s.stringByteArr("Hello!");
         s.stringByteArr("Привет!");
         s.stringByChara("Hello!");
+        s.stringEquals();
     }
 }

@@ -14,4 +14,11 @@ public class Strings {
             System.out.println(i);
         }
     }
+
+    public void stringEquals() {
+        String s = new String("a b s d");
+        String s2 = new String(s);
+        System.out.println(s == s2);
+        System.out.println(s.equals(s2));
+    }
 }
