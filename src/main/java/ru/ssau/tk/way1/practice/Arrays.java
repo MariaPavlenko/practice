@@ -1,5 +1,7 @@
 package ru.ssau.tk.way1.practice;
 
+import static java.lang.Math.sqrt;
+
 public class Arrays {
     public int[] arr(int n) {
         return new int[n];
@@ -29,6 +31,23 @@ public class Arrays {
         int[] arr = new int[n];
         for (int i = 0; i < n; i++) {
             arr[i] = i * i;
+        }
+        return arr;
+    }
+
+    public double[] arrQuadraticEquation(double a, double b, double c) {
+        double[] arr = new double[]{0};
+        double discriminant = b * b - 4 * a * c;
+        if (discriminant == 0) {
+            arr = new double[1];
+            arr[0] = -b / 2 * a;
+        }
+        if (discriminant < 0) {
+        }
+        if (discriminant > 0) {
+            arr = new double[2];
+            arr[0] = -b + sqrt(discriminant) / 2 * a;
+            arr[1] = -b - sqrt(discriminant) / 2 * a;
         }
         return arr;
     }

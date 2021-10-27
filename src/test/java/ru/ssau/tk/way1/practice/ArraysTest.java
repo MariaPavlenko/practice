@@ -28,4 +28,9 @@ public class ArraysTest {
     public void testArrSqr() {
         Assert.assertEquals(arr1.arrSqr(5), new int[]{0, 1, 4, 9, 16});
     }
+
+    @Test
+    public void testArrQuadraticEquation() {
+        Assert.assertEquals(arr1.arrQuadraticEquation(1, 2, 1), new double[]{-1});
+    }
 }
