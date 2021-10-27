@@ -24,4 +24,12 @@ public class Arrays {
         }
         return arr;
     }
+
+    public int[] arrSqr(int n) {
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = i * i;
+        }
+        return arr;
+    }
 }
