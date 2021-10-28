@@ -33,4 +33,9 @@ public class ArraysTest {
     public void testArrQuadraticEquation() {
         Assert.assertEquals(arr1.arrQuadraticEquation(1, 2, 1), new double[]{-1});
     }
+
+    @Test
+    public void testArrWithoutThreeA() {
+        Assert.assertEquals(arr1.arrWithoutThreeA(5), new int[]{1, 2, 4, 5, 7});
+    }
 }

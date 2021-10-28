@@ -51,4 +51,18 @@ public class Arrays {
         }
         return arr;
     }
+
+    public int[] arrWithoutThreeA(int n) {
+        int[] arr = new int[n];
+        int c = 0;
+        for (int i = 0; i < n; i++) {
+            if ((i + c) % 3 != 0) {
+                arr[i] = i + c;
+            } else {
+                c++;
+                arr[i] = i + c;
+            }
+        }
+        return arr;
+    }
 }
