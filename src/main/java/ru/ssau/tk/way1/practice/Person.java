@@ -4,23 +4,40 @@ public class Person {
     private String firstName;
     private String lastName;
     private int passportId;
+    private Gender gender;
+
+    public void setGender(Gender gender) {
+        this.gender = gender;
+    }
+
+    public Gender getGender() {
+        return gender;
+    }
+
+    public enum Gender {
+        MALE,
+        FEMALE
+    }
 
     public Person() {
     }
 
-    public Person(String firstName, String lastName) {
+    public Person(String firstName, String lastName, Gender gender) {
         this.firstName = firstName;
         this.lastName = lastName;
+        this.gender = gender;
     }
 
     public Person(int passportId) {
+
         this.passportId = passportId;
     }
 
-    public Person(String firstName, String lastName, int passportId) {
+    public Person(String firstName, String lastName, int passportId, Gender gender) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.passportId = passportId;
+        this.gender = gender;
     }
 
     public String getFirstName() {
