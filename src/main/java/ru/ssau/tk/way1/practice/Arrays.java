@@ -1,5 +1,7 @@
 package ru.ssau.tk.way1.practice;
 
+import java.util.ArrayList;
+
 import static java.lang.Math.sqrt;
 
 public class Arrays {
@@ -64,5 +66,23 @@ public class Arrays {
             }
         }
         return arr;
+    }
+
+    public Integer[] arr12(int n) {
+        int c;
+        ArrayList<Integer> arr = new ArrayList<>();
+        for (int i = 2; i <= n; i++) {
+            c = 0;
+            for (int j = 1; j <= i; j++) {
+                if (i % j == 0) {
+                    c++;
+                }
+            }
+            if (c == 2) {
+                arr.add(i);
+            }
+        }
+        Integer[] result = arr.toArray(new Integer[arr.size()]);
+        return result;
     }
 }

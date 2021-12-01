@@ -3,8 +3,6 @@ package ru.ssau.tk.way1.practice;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import static org.testng.Assert.*;
-
 public class ArraysTest {
     Arrays arr1 = new Arrays();
     int[] first = arr1.arr(5);
@@ -37,5 +35,10 @@ public class ArraysTest {
     @Test
     public void testArrWithoutThreeA() {
         Assert.assertEquals(arr1.arrWithoutThreeA(5), new int[]{1, 2, 4, 5, 7});
+    }
+
+    @Test
+    public void testArr12() {
+        Assert.assertEquals(arr1.arr12(7), new Integer[]{2, 3, 5, 7});
     }
 }
