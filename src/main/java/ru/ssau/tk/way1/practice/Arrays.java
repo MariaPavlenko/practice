@@ -105,4 +105,13 @@ public class Arrays {
             arr[i] = -arr[i];
         }
     }
+
+    public boolean arr15(int[] arr, int a) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == a) {
+                return true;
+            }
+        }
+        return false;
+    }
 }
