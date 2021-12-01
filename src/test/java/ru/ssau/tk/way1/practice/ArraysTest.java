@@ -41,4 +41,9 @@ public class ArraysTest {
     public void testArr12() {
         Assert.assertEquals(arr1.arr12(7), new Integer[]{2, 3, 5, 7});
     }
+
+    @Test
+    public void testArr13() {
+        Assert.assertEquals(arr1.arr13(7),new int[]{1, 2, 3, 4, 3, 2, 1});
+    }
 }

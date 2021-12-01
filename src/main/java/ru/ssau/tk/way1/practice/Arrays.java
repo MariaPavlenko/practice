@@ -85,4 +85,17 @@ public class Arrays {
         Integer[] result = arr.toArray(new Integer[arr.size()]);
         return result;
     }
+
+    public int[] arr13(int n) {
+        int[] arr = new int[n];
+        int c = 1;
+        for (int i =0; i<n; i++){
+        if (i <= n / 2) {
+            arr[i] = i + 1;
+        } else {
+            arr[i] = i - c;
+            c += 2;
+        }}
+        return arr;
+    }
 }
