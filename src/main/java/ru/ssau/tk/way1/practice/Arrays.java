@@ -89,13 +89,20 @@ public class Arrays {
     public int[] arr13(int n) {
         int[] arr = new int[n];
         int c = 1;
-        for (int i =0; i<n; i++){
-        if (i <= n / 2) {
-            arr[i] = i + 1;
-        } else {
-            arr[i] = i - c;
-            c += 2;
-        }}
+        for (int i = 0; i < n; i++) {
+            if (i <= n / 2) {
+                arr[i] = i + 1;
+            } else {
+                arr[i] = i - c;
+                c += 2;
+            }
+        }
         return arr;
+    }
+
+    public void arr14(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = -arr[i];
+        }
     }
 }
